@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Page Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+
+
+/* PAGE-WIDE BUSINESS */
+
+        * {
+            margin: 0;
+            padding: 0;
+            color: #5e6364;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: 'lulo_cleanone_bold';
+            src: url('fonts/lulocleanonebold-webfont.woff2') format('woff2'),
+                 url('fonts/lulocleanonebold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+        h1 {
+            font-family: "lulo_cleanone_bold", sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            padding-left: 1vw;
+            font-size: 75px;
+            font-size: 9vw;
+            line-height: 75px;
+            line-height: 7vw;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-size: 4vw;
+            letter-spacing: 1.5px;
+        }
+
+
+/* HEADER BUSINESS */
+
+        .header {
+            background-color: #cddbde;
+        }
+
+        .nav {
+            padding: 20px 5% 4vw 0;
+        }
+
+        .nav_button, .nav_button:hover {
+            margin: 0 0 0 auto;
+            text-indent: -9999px;
+            overflow: hidden;
+            display: block;
+            width: 28px;
+            height: 28px;
+            background-image: url("images/nav_sprite@1x.png");
+            background-size: 56px 28px;
+
+        }
+
+        .nav_button {
+            opacity: 0.9;
+            transition: all 0.3s ease-in;
+        }
+
+        .nav_button:hover, .nav_button:active {
+            background-position: -28px 0;
+            opacity: 0.6;
+            transition: all 0.3s ease-out;
+        }
+
+        .header_content {
+            width: 90%; /* Set header content width here */
+            margin: 30px 5% 0 5%;
+        }
+
+        .title {
+            max-width: 100%;
+
+        }
+
+        .header_image {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .header_content p {
+            text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .header_content p.first {
+            margin-top: 30px;
+        }
+
+        .header_content a {
+            display: inline-block;
+            margin: 30px 0 60px 0;
+            padding: 15px 25px;
+            color: #ffffff;
+            background-color: #5e6364;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1em;
+            line-height: 1em;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            opacity: 0.9;
+            transition: all 0.3s ease-in;
+        }
+
+        .header_content a:hover {
+            opacity: 0.7;
+            transition: all 0.3s ease-out;
+        }
+
+
+/* SECTION SPECIFIC */
+
+#section_2 {
+
+}
+
+        .section_contents {
+            width: 50%;
+            padding: 0 25%;
+            margin-bottom: -25px;
+
+
+        }
+
+
+
+
+/* SECTION 1 */
+
+
+
+/* accordion start */
+
+
+    .accordion {
+        width: 100%;
+        padding: 100px 0 0 0;
+        max-height: 350px;
+        overflow: hidden;
+        /**/
+        transition: max-height 0.8s ease-out;
+
+
+    }
+    .long_image {
+        max-width: 90%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .accordion_control_image {
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0 0;
+        padding: 0;
+
+    }
+
+    .expanded {
+
+        /*max-height: 1500px;
+        max-height: auto;
+        transition: max-height 0.8s ease-out; */
+        padding-bottom: 30px;
+
+    }
+
+    .odd_section {
+        background-color: #f4f5f5;
+
+    }
+
+    .even_section {
+        background-color: #ffffff;
+
+    }
+
+    /* accordion end */
+
+
+/* FOOTER */
+
+        .footer {
+            background-color: #cddbde;
+            padding: 60px 30px 30px 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .footer_contents p {
+            color: #ffffff;
+            font-size: 0.75em;
+            letter-spacing: 0.7px;
+        }
+
+        .footer_contents img {
+            width: 32px;
+            height: 32px;
+            opacity: 0.6;
+            transition: all 0.3s ease-in;
+        }
+
+        .footer_contents img:hover {
+            opacity: 0.9;
+            transition: all 0.3s ease-out;
+        }
+
+        .footer_contents ul {
+            padding: 20px 0;
+        }
+
+        .footer_contents li {
+            display: inline;
+            padding: 50px 10px;
+        }
+
+
+/* MEDIA QUERIES */
+
+        @media (min-width: 820px) {
+
+            h1 {
+                /*color: red;*/
+                padding-left: 1.5vw;
+                font-size: 8vw;
+            }
+
+            H2 {
+                font-size: 26px;
+                font-size: 2.6vw;
+            }
+
+            .container {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            .header_content {
+                width: 50%;     /* Set header content width here */
+                margin: 30px 25% 0 25%;
+            }
+
+        }
+
+        @media (min-width: 1920px) {
+            h1 {
+                border: 1px solid gray;
+            }
+        }
+    </style>
+    <script src="js/jquery-3.2.1.js"></script>
+
+</head>
+<body class="body">
+
+<!-- SCRIPTS START -->
+<script>
+$( document ).ready(function() {
+
+
+$( ".accordion_control" ).click(function( event ) {
+event.preventDefault();
+    myvar = $(event.target).parent().parent().attr('id');
+    var myvar2 = ('#' + myvar + ' .accordion');
+//alert(topvar);
+//new
+topvar = $(myvar2).parent().attr('id');
+
+
+
+
+
+
+$(myvar2).animate({
+    maxHeight: "3000px"
+},300, "linear", function() {
+    // Animation complete.
+    $('html, body').animate({
+        scrollTop:($(myvar2).offset().top)
+        /*, marginTop:"-20px" - POSITION INITIAL SCROLL */
+    }, 300);
+});
+
+//$('html, body').animate({
+    //scrollTop:($(myvar2).offset().top)
+//}, 300, function() {
+  // Animation complete.
+ // $(myvar2).animate({
+     // maxHeight: "3000px"
+  //},300, "linear");
+//});
+
+//TO DO
+//CLOSE STATE
+//ADD EASING
+//MAKE EXPANDED DEFAULT BEFORE JS
+
+
+
+
+//new
+
+});
+
+/*
+$('html, body').animate({
+    scrollTop:($(myvar2).offset().top)
+},500, function() {
+  // Animation complete.
+  $(myvar2).animate({
+      height: 1000
+  },500)
+}
+};);
+*/
+
+
+/*
+
+
+  if ($(myvar2).hasClass("expanded")) {
+      $(myvar2).removeClass( "expanded" );
+      //alert(myvar2);
+
+  } else {
+      $(myvar2).addClass( "expanded" );
+     // alert(myvar2);
+}
+*/
+});
+
+
+
+
+
+
+
+
+</script>
+
+<!-- SCRIPTS END -->
+
+<!-- HEADER BEGIN -->
+    <header class="header">
+        <div class="nav"><a href="" class="nav_button">Back</a></div>
+        <div class="title"><h1>Unlock.Life</h1></div>
+        <div class="subtitle"><h2>Branding, Website &amp; Packaging</h2></div>
+        <div class="header_content">
+        <img src="images/header_image_placeholder.jpg" class="header_image" />
+        <p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+
+        <a href="" class="">Visit website</a>
+      </div>
+    </header>
+<!-- HEADER END -->
+
+<!-- SECTIONS BEGIN -->
+<section id="section_1" class="section_contents odd_section">
+<div class="accordion">
+    <h2 id="section_1_head">Homepage</h2>
+    <image src="images/long_image_placeholder.jpg" class="long_image"/>
+  </div>
+   <a href="#" class="accordion_control" id="1_button"><image src="images/expand_image_button.svg" class="accordion_control_image"/></a>
+</section>
+
+<section id="section_2" class="section_contents even_section">
+<div class="accordion">
+        <h2 id="">Portfolio</h2>
+        <image src="images/long_image_placeholder.jpg" class="long_image"/>
+  </div>
+   <a href="#" class="accordion_control" id="2_button"><image src="images/expand_image_button.svg" class="accordion_control_image"/></a>
+</section>
+<!-- SECTIONS END -->
+
+<!-- FOOTER BEGIN -->
+    <footer class="footer">
+        <div class="footer_contents">
+            <div class="social">
+                <ul>
+                    <li><a href="http://www.facebook.com/TomCooneyWebDesigner"><img src="images/facebook.png" width="32" height="32" alt="Facebook"></a></li>
+                    <li><a href="http://linkedin.com/in/tomcooneydesign/"><img src="images/linkedin.png" width="32" height="32" alt="Linkedin"></a></li>
+                    <li><a href="https://dribbble.com/tomcooneydesign"><img src="images/dribbble.png" width="32" height="32" alt="Dribbble"></a></li>
+                    <li><a href="https://twitter.com/oldtombanjo"><img src="images/twitter.png" width="32" height="32" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            <p>&copy;2017 Tom Cooney</p>
+        </div>
+    </footer>
+<!-- FOOTER END -->
+</body>
+</html>
